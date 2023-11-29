@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Educational Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #154360;
+            color: #fff;
+            padding: 0.2em;
+            display: flex; /* Add flex display to header */
+            align-items: center; /* Center items vertically in the flex container */
+            justify-content: flex-start; /* Align items to the start (left) of the flex container */
+        }
+
+        header img {
+            max-width: 80px;
+            margin-right: 1em; /* Add some right margin for separation */
+        }
+
+        nav {
+            background-color: #7E5109;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        main {
+            padding: 1em;
+            max-height: 500px; /* Set the maximum height for the main section */
+            overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0em;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://www.arapatsa.org/static/cubite-theme/images/logo.a063f4464abd.png" alt="Header Image">
+        <h1>ཨོཾ་ཨ་ར་པ་ཙ་ན་དྷཱིཿསློབ་གླིང་།</h1>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <a href="#">མདུན་ངོས།</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">སློབ་ཚན།</a>
+            <div class="dropdown-content">
+                <a href="file:///C:/Users/drong/OneDrive/Desktop/Tibetan%20learning%20site/Course_buddhsim.html">ནང་ཆོས།</a>
+                <a href="file:///C:/Users/drong/OneDrive/Desktop/Tibetan%20learning%20site/Course_language.html">སྐད་ཡིག</a>
+                <a href="#">འཕྲུལ་རིགས།</a>
+            </div>
+        </div>
+
+        
+        <div class="dropdown">
+            <a href="#">དཔེ་མཛོད།</a>
+            <div class="dropdown-content">
+                <a href="#">སྐད་ཡིག</a>
+                <a href="#">སྒྲུང་ཐུང་།</a>
+                <a href="#">ཨང་རྩིས།</a>
+                <a href="#">ཚན་རིག</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#">སྒྲ་བརྙན།</a>
+            <div class="dropdown-content">
+                <a href="file:///C:/Users/drong/OneDrive/Desktop/Tibetan%20learning%20site/Audio_video_index.html">ནང་ཆོས།</a>
+                <a href="#">གླུ་གཞས།</a>
+                <a href="#">གསུང་བཤད།</a>
+                <a href="#">སྒུང་།</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">འབྲེལ་མཐུད།</a>
+            <div class="dropdown-content">
+                <a href="#">ང་ཚོའི་སྐོར།</a>
+                <a href="#">ལས་བྱེད་མི་སྣ།</a>
+                <a href="#">ཁ་བྱང་།</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h2>དོན་ཚན་བདུན་པ།  སློབ་ཡོན་ཞུ་ལེན་གྱི་དགོས་ངེས་ཆ་རྐྱེན་དང་། འདེམས་སྒྲུག་བྱེད་ཕྱོགས།</h2>
+        <p>
+            <br> ༡།       འབྲེལ་ཡོད་ས་གནས་འགོ་འཛིན་ནམ། ས་འགོ་མེད་སར་རང་བདེན་ཚོགས་ཆུང་ནས་བོད་མི་སྐྱབས་བཅོལ་བ་ངོ་མ་ཡིན་ཞིང་། དང་བླངས་དཔྱ་དངུལ་འབུལ་ཆད་མེད་པའི་ངོས་སྦྱོར་ཡོད་དགོས། </br>
+            
+            <br>༢།       མཐོ་སློབ་སློབ་ཡོན་ཁོངས་འཛིན་རིམ་བཅུ་གཉིས་གསར་ཐོན་རྣམས་ལ་གོ་སྐབས་དང་པོ་སྤྲོད་རྒྱུ་དང༌། ས་མིག་ལྷག་མ་བྱུང་ན་སློབ་ལོ་སྔ་མའི་སྙན་འབུལ་བར་བགོ་འགྲེམས་བྱ་འཐུས། </br>
+            
+            <br>༣།      ཀ      ཉེ་བའི་གཙུག་ལག་རབ་འབྱམས་པ་དང་། ཌིབ་ལོ་མ། ལས་རིགས་སྦྱོང་བརྡར་བཅས་ཀྱི་སློབ་ཡོན་གྱི་བརྒྱ་ཆ་སྐོར་སྟངས་ནི། འཛིན་རིམ་བཅུ་གཉིས་པའི་ཆ་སྙོམས་རྒྱུགས་འབྲས་ལ་བརྒྱ་ཆ་ ༧༠ དང་། བོད་ཡིག་གི་རྒྱུགས་འབྲས་ལ་བརྒྱ་ཆ་ ༢༥ དང་། སློབ་གྲྭ་ཁག་གི་སྤྱི་ཁྱབ་རྒན་བདག་ལ་བརྒྱ་ཆ་ ༢ དང་། བུམ་སྐྱོན་གསུམ་བྲལ་ལ་བརྒྱ་ཆ་ ༣ བཅས་ཁྱོན་བསྡོམས་བརྒྱ་ཆ་ ༡༠༠ ཡིན། འཛིན་རིམ་བཅུ་གཉིས་ཀྱི་རྒྱལ་ཡོངས་རྒྱུགས་འབྲས་ནང་སློབ་ཚན་ཨང་ཐོབ་ལེགས་ཤོས་ལྔའི་ཆ་སྙོམས་ཨང་ཐོབ་ལ་གཤམ་གསལ་ལྟར་བརྒྱ་ཆ་རྩིས་བསྐོར་གྱིས་སློབ་ཡོན་སྦྱར་རྒྱུ། (ཨང་ཀི་ཇི་ཐོབ་)x༧༠/༡༠༠=</br>
+            
+            <br>ཁ      འཛིན་རིམ་བཅུ་གཉིས་པའི་རྒྱལ་ཡོངས་རྒྱུགས་འབྲས་སུ་བོད་ཀྱི་སྐད་ཡིག་ལ་བརྒྱ་ཆ་ ༣༣ ཡན་ལོན་པའམ། ཡང་ན་ཤེས་རིག་ལས་ཁུངས་བརྒྱུད་འཛིན་རིམ་བཅུ་གཉིས་དང་ཚད་མཉམ་ཡིག་རྒྱུགས་ཤིག་གོ་སྒྲིག་བྱས་པའི་ནང་ཞུགས་ཏེ་ཉུང་མཐར་བརྒྱ་ཆ་ ༣༣ ཡན་ལོན་པ་ཞིག་ཡིན་ན། བོད་ཡིག་སློབ་ཚན་ལ་གཤམ་གསལ་ལྟར་བརྒྱ་ཆ་འཐོབ་རྒྱུ། (ཨང་ཀི་ཇི་ཐོབ་)x༢༥/༡༠༠=</br>
+            
+            <br> ག      འབྲུག་གི་བོད་པའི་སློབ་ཕྲུག་རྣམས་འཛིན་རིམ་བཅུ་གཉིས་པའི་རྫོང་ཁ་རྒྱུགས་འབྲས་ལ་ཚད་འཛིན་བྱེད་ཆོག</br>
+            
+            <br> ༤།     སློབ་ཡོན་ངོས་བཞེས་ཟིན་པ་གང་ཞིག དམིགས་བསལ་རྒྱུ་མཚན་དང་སྦྲགས་དོ་བདག་ནས་རང་ཉིད་ཀྱི་རིག་ཚན་བརྗེ་བསྒྱུར་ཆོག་པའི་སྙན་ཞུ་ཕུལ་རིགས་ལ་དགོངས་བཞེས་གནང་རྒྱུ།</br>
+            
+            <br> ༥།      གསལ་བསྒྲགས་ནང་གསལ་དགོས་མཁོའི་ཆ་རྐྱེན་མ་ཚང་བ་དང༌། སྙན་ཞུ་དུས་བཀག་ནང་ཚུན་མ་འབྱོར་བ། ཡིག་ཆ་རྫུན་སྒྲིག་བྱས་པའི་རིགས་ལ་སློབ་ཡོན་མི་ཐོབ།</br>
+            
+            <br> ༦།      ཤེས་ཚད་ལག་འཁྱེར་དང་། ཨང་ཤོག དགོས་ངེས་ཡིག་ཆ་གཞན་བཅས་ཀྱི་འདྲ་བཤུས་ཐོག་ས་གནས་འགོ་འཛིན་ནམ་ཟུང་དྲུང་གནས་རིམ་ཡན་གྱི་ལས་བྱེད། ཤེས་རིག་ཁྱབ་ཁོངས་འཛིན་རིམ་བཅུ་པ་ཡན་ཡོད་པའི་སློབ་གྲྭའི་སློབ་སྤྱི་གང་རུང་ནས་བདེན་བཤེར་སོང་བའི་དག་མཆན་ (Attestation)  ཞུ་དགོས།</br>
+            
+            <br> ༧།      ཁུངས་གཞན་ནས་མཐོ་རིམ་སློབ་ཡོན་ཐོབ་མཁན་ལ་སློབ་ཡོན་འདི་ཐོབ་ཐང་མེད།</br>
+        </p>
+
+    </main>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
