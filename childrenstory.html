@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #154360;
+            color: #fff;
+            padding: 0.2em;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        header img {
+            max-width: 80px;
+            margin-right: 1em;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        .pdf-section {
+            margin-bottom: 20px;
+        }
+
+        .pdf-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .pdf-link {
+            text-decoration: none;
+            color: #333;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pdf-link img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px;
+        }
+
+        .pdf-link:hover {
+            background-color: #f0f0f0;
+        }
+
+        .show-more-btn,
+        .show-less-btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://www.arapatsa.org/static/cubite-theme/images/logo.a063f4464abd.png" alt="Header Image">
+        <h1>བྱིས་སྒྲུང་གླིང་།</h1>
+    </header>
+
+    <main>
+        <!-- Adventure Stories Section -->
+        <section class="pdf-section" id="adventure-stories">
+            <h2>Adventure Stories</h2>
+            <div class="pdf-container" id="adventure-container">
+                <!-- Add only 5 PDF links here -->
+                <a href="path/to/pdf1.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/icon1.jpg" alt="PDF Icon">
+                    <span>PDF File 1</span>
+                </a>
+
+                <a href="path/to/pdf2.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/icon2.jpg" alt="PDF Icon">
+                    <span>PDF File 2</span>
+                </a>
+
+                <a href="path/to/pdf3.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/icon3.jpg" alt="PDF Icon">
+                    <span>PDF File 3</span>
+                </a>
+
+                <a href="path/to/pdf4.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/icon4.jpg" alt="PDF Icon">
+                    <span>PDF File 4</span>
+                </a>
+
+                <a href="path/to/pdf5.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/icon5.jpg" alt="PDF Icon">
+                    <span>PDF File 5</span>
+                </a>
+
+                <!-- Add more PDF links here with style="display: none;" -->
+                <a href="path/to/pdf6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/icon6.jpg" alt="PDF Icon">
+                    <span>PDF File 6</span>
+                </a>
+
+                <a href="path/to/pdf6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/icon6.jpg" alt="PDF Icon">
+                    <span>PDF File 6</span>
+                </a>
+
+                <a href="path/to/pdf6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/icon6.jpg" alt="PDF Icon">
+                    <span>PDF File 6</span>
+                </a>
+
+                <a href="path/to/pdf6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/icon6.jpg" alt="PDF Icon">
+                    <span>PDF File 6</span>
+                </a>
+
+                <a href="path/to/pdf6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/icon6.jpg" alt="PDF Icon">
+                    <span>PDF File 6</span>
+                </a>
+
+                <a href="path/to/pdf6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/icon6.jpg" alt="PDF Icon">
+                    <span>PDF File 6</span>
+                </a>
+
+                <a href="path/to/pdf6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/icon6.jpg" alt="PDF Icon">
+                    <span>PDF File 6</span>
+                </a>
+
+                <a href="path/to/pdf7.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/icon7.jpg" alt="PDF Icon">
+                    <span>PDF File 7</span>
+                </a>
+
+                <!-- Add more PDF links as needed -->
+
+            </div>
+            <button class="show-more-btn" onclick="showMore('adventure-container')">དེ་ལས་མང་བ།</button>
+            <button class="show-less-btn" onclick="showLess('adventure-container')">ཉུང་བ་སྟོན།</button>
+        </section>
+
+        <!-- Mystery Stories Section -->
+        <section class="pdf-section" id="mystery-stories">
+            <h2>Mystery Stories</h2>
+            <div class="pdf-container" id="mystery-container">
+                <!-- Add only 5 PDF links here -->
+                <a href="path/to/mystery1.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/mystery-icon1.jpg" alt="PDF Icon">
+                    <span>Mystery File 1</span>
+                </a>
+
+                <a href="path/to/mystery2.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/mystery-icon2.jpg" alt="PDF Icon">
+                    <span>Mystery File 2</span>
+                </a>
+
+                <a href="path/to/mystery3.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/mystery-icon3.jpg" alt="PDF Icon">
+                    <span>Mystery File 3</span>
+                </a>
+
+                <a href="path/to/mystery4.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/mystery-icon4.jpg" alt="PDF Icon">
+                    <span>Mystery File 4</span>
+                </a>
+
+                <a href="path/to/mystery5.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/mystery-icon5.jpg" alt="PDF Icon">
+                    <span>Mystery File 5</span>
+                </a>
+
+                <!-- Add more PDF links here with style="display: none;" -->
+                <a href="path/to/mystery6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/mystery-icon6.jpg" alt="PDF Icon">
+                    <span>Mystery File 6</span>
+                </a>
+
+                <a href="path/to/mystery7.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/mystery-icon7.jpg" alt="PDF Icon">
+                    <span>Mystery File 7</span>
+                </a>
+
+                <!-- Add more PDF links as needed -->
+
+            </div>
+            <button class="show-more-btn" onclick="showMore('mystery-container')">Show More</button>
+            <button class="show-less-btn" onclick="showLess('mystery-container')">Show Less</button>
+        </section>
+
+        <!-- Fantasy Stories Section -->
+        <section class="pdf-section" id="fantasy-stories">
+            <h2>Fantasy Stories</h2>
+            <div class="pdf-container" id="fantasy-container">
+                <!-- Add only 5 PDF links here -->
+                <a href="path/to/fantasy1.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/fantasy-icon1.jpg" alt="PDF Icon">
+                    <span>Fantasy File 1</span>
+                </a>
+
+                <a href="path/to/fantasy2.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/fantasy-icon2.jpg" alt="PDF Icon">
+                    <span>Fantasy File 2</span>
+                </a>
+
+                <a href="path/to/fantasy3.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/fantasy-icon3.jpg" alt="PDF Icon">
+                    <span>Fantasy File 3</span>
+                </a>
+
+                <a href="path/to/fantasy4.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/fantasy-icon4.jpg" alt="PDF Icon">
+                    <span>Fantasy File 4</span>
+                </a>
+
+                <a href="path/to/fantasy5.pdf" class="pdf-link" target="_blank">
+                    <img src="path/to/fantasy-icon5.jpg" alt="PDF Icon">
+                    <span>Fantasy File 5</span>
+                </a>
+
+                <!-- Add more PDF links here with style="display: none;" -->
+                <a href="path/to/fantasy6.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/fantasy-icon6.jpg" alt="PDF Icon">
+                    <span>Fantasy File 6</span>
+                </a>
+
+                <a href="path/to/fantasy7.pdf" class="pdf-link" target="_blank" style="display: none;">
+                    <img src="path/to/fantasy-icon7.jpg" alt="PDF Icon">
+                    <span>Fantasy File 7</span>
+                </a>
+
+                <!-- Add more PDF links as needed -->
+
+            </div>
+            <button class="show-more-btn" onclick="showMore('fantasy-container')">Show More</button>
+            <button class="show-less-btn" onclick="showLess('fantasy-container')">Show Less</button>
+        </section>
+
+        <!-- Add more sections for other categories -->
+
+    </main>
+
+    <footer>
+        <!-- Your existing footer content -->
+    </footer>
+
+    <script>
+        function showMore(containerId) {
+            const container = document.getElementById(containerId);
+            const hiddenLinks = container.querySelectorAll('.pdf-link[style="display: none;"]');
+
+            hiddenLinks.forEach(link => {
+                link.style.display = 'flex';
+            });
+        }
+
+        function showLess(containerId) {
+            const container = document.getElementById(containerId);
+            const pdfLinks = container.querySelectorAll('.pdf-link');
+
+            pdfLinks.forEach((link, index) => {
+                // Hide additional links
+                link.style.display = index < 5 ? 'flex' : 'none';
+            });
+        }
+    </script>
+
+</body>
+
+</html>
