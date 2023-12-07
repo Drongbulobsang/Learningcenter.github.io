@@ -31,18 +31,21 @@
             padding: 1em;
         }
 
-        .document-section {
+        .pdf-section,
+        .epub-section {
             margin-bottom: 20px;
         }
 
-        .document-container {
+        .pdf-container,
+        .epub-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
         }
 
-        .document-link {
+        .pdf-link,
+        .epub-link {
             text-decoration: none;
             color: #333;
             margin: 10px;
@@ -54,17 +57,20 @@
             align-items: center;
         }
 
-        .document-link img {
+        .pdf-link img,
+        .epub-link img {
             width: 100px;
             height: 100px;
             margin-bottom: 5px;
         }
 
-        .document-link:hover {
+        .pdf-link:hover,
+        .epub-link:hover {
             background-color: #f0f0f0;
         }
 
-        .show-more-less-btn {
+        .show-more-btn,
+        .show-less-btn {
             background-color: #3498db;
             color: #fff;
             padding: 5px 10px;
@@ -78,48 +84,138 @@
 <body>
 
     <header>
-        <img src="https://www.arapatsa.org/static/cubite-theme/images/logo.a063f4464abd.png" alt="Header Image">
-        <h1>བྱིས་སྒྲུང་གླིང་།</h1>
+        <img src="path/to/logo.png" alt="Header Image">
+        <h1>Document Viewer</h1>
     </header>
 
     <main>
-        <!-- Combined Section -->
-        <section class="document-section" id="combined-documents">
-            <h2>Combined Documents</h2>
-            <div class="document-container" id="combined-container">
-                <!-- Add PDF and EPUB links here -->
+        <!-- PDF Section -->
+        <section class="pdf-section" id="pdf-stories">
+            <h2>PDF Stories</h2>
+            <div class="pdf-container" id="pdf-container">
+                <!-- Add PDF links here -->
                 <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary-of-New-Daily-Vocabulary-1.pdf" class="pdf-link" target="_blank">
                     <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Drupchok_Dakyig.jpg?w=400&ssl=1" alt="PDF Icon">
-                    <span>གྲུབ་མཆོག་དག་ཡིག</span>
+                    <span>PDF File 1</span>
                 </a>
 
                 <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary1.pdf" class="pdf-link" target="_blank">
                     <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="PDF Icon">
-                    <span>དབྱིན་ཡིག་བརྡ་སྤྲོད་ལ་འཇུག་པའི་སྒོ།</span>
-
-                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="pdf-link" target="_blank">
-                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Drupchok_Dakyig.jpg?w=400&ssl=1" alt="PDF Icon">
-                    <span>གྲུབ་མཆོག་དག་ཡིག</span>
+                    <span>PDF File 2</span>
                 </a>
 
-                <a href="PDF Dictionary/Gangjong-Tsigzhod-Chenmo.epub" class="pdf-link" target="_blank">
+                <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary1.pdf" class="pdf-link" target="_blank">
                     <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="PDF Icon">
-                    <span>དབྱིན་ཡིག་བརྡ་སྤྲོད་ལ་འཇུག་པའི་སྒོ། དབྱིན་ཡིག་བརྡ་སྤྲོད་ལ་འཇུག་པའི་སྒོ།</span>
+                    <span>PDF File 2</span>
                 </a>
 
-                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="document-link" target="_blank">
-                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Drupchok_Dakyig.jpg?w=400&ssl=1" alt="EPUB Cover">
-                    <span>དབྱིན་ཡིག་བརྡ་སྤྲོད་ལ་འཇུག་པའི་སྒོ།</span>
+                <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary1.pdf" class="pdf-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="PDF Icon">
+                    <span>PDF File 2</span>
                 </a>
 
-                <a href="PDF Dictionary/Gangjong-Tsigzhod-Chenmo.epub" class="document-link" target="_blank">
-                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="EPUB Cover">
-                    <span>གྲུབ་མཆོག་དག་ཡིག</span>
+                <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary1.pdf" class="pdf-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="PDF Icon">
+                    <span>PDF File 2</span>
                 </a>
-                <!-- Add more PDF and EPUB links as needed -->
+
+                <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary1.pdf" class="pdf-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="PDF Icon">
+                    <span>PDF File 2</span>
+                </a>
+
+                <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary1.pdf" class="pdf-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="PDF Icon">
+                    <span>PDF File 2</span>
+                </a>
+
+                <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary1.pdf" class="pdf-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="PDF Icon">
+                    <span>PDF File 2</span>
+                </a>
+
+                <a href="PDF Dictionary/Chinese-Tibetan-English-Dictionary1.pdf" class="pdf-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/English-Grammer-Book.jpg?w=400&ssl=1" alt="PDF Icon">
+                    <span>PDF File 2</span>
+                </a>
+
+                <!-- Add more PDF links as needed -->
 
             </div>
-            <button class="show-more-less-btn" onclick="toggleDocuments('combined-container')">Show More</button>
+            <button class="show-more-btn" onclick="toggleDocuments('pdf-container')">Show More</button>
+            <button class="show-less-btn" onclick="toggleDocuments('pdf-container')">Show Less</button>
+        </section>
+
+        <!-- EPUB Section -->
+        <section class="epub-section" id="epub-stories">
+            <h2>EPUB Stories</h2>
+            <div class="epub-container" id="epub-container">
+                <!-- Add EPUB links here -->
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+
+                <a href="PDF Dictionary/Bod_Gangchen_Jongkyi_Dejor_Rigpa-v9gg9z.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/11/Gangjong-Tsigzhod-Chenmo.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 1</span>
+                </a>
+                
+                <a href="PDF Dictionary/Dhasar_Nyinggi-Namshak-7ztsko.epub" class="epub-link" target="_blank">
+                    <img src="https://i0.wp.com/tibetanebook.com/wp-content/uploads/2022/12/Dhasar_Nyinggi_Namshak.jpg?w=400&ssl=1" alt="EPUB Cover">
+                    <span>EPUB File 2</span>
+                </a>
+
+                <!-- Add more EPUB links as needed -->
+
+            </div>
+            <button class="show-more-btn" onclick="toggleDocuments('epub-container')">Show More</button>
+            <button class="show-less-btn" onclick="toggleDocuments('epub-container')">Show Less</button>
         </section>
 
     </main>
@@ -131,18 +227,20 @@
     <script>
         function toggleDocuments(containerId) {
             const container = document.getElementById(containerId);
-            const links = container.querySelectorAll('.document-link');
+            const links = container.querySelectorAll('.pdf-link, .epub-link');
 
             links.forEach((link, index) => {
-                // Toggle visibility based on the index (show all or show first 5)
+                // Toggle visibility based on the index (show the first 5)
                 link.style.display = index < 5 ? 'flex' : 'none';
             });
 
-            const showMoreLessBtn = container.parentElement.querySelector('.show-more-less-btn');
+            const showMoreBtn = container.parentElement.querySelector('.show-more-btn');
+            const showLessBtn = container.parentElement.querySelector('.show-less-btn');
 
-            if (showMoreLessBtn) {
-                // Toggle the label of the button
-                showMoreLessBtn.textContent = links.length > 5 ? 'Show More' : 'Show Less';
+            if (showMoreBtn && showLessBtn) {
+                // Toggle the visibility of buttons
+                showMoreBtn.style.display = links.length > 5 ? 'block' : 'none';
+                showLessBtn.style.display = 'none';
             }
         }
     </script>
